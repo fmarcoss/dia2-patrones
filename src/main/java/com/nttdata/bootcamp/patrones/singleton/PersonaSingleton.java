@@ -10,21 +10,21 @@ package com.nttdata.bootcamp.patrones.singleton;
 public final class PersonaSingleton {
 
 	private String name;
-	private Integer age;
+	private int age;
 	private static PersonaSingleton personaInstance;
 
 	private PersonaSingleton() {
-
+		
 	}
 
 	public static PersonaSingleton getInstance() {
-		
+
 		return personaInstance == null ? personaInstance = new PersonaSingleton() : personaInstance;
-		
+
 	}
-	
+
 	public void singletonOperation() {
 		System.out.println("Soy una persona!!");
-		System.out.println("Mi nombre es "+ name+" y tengo "+age+" años.");
+		System.out.println("Mi nombre es " + name + " y tengo " + age + " años.");
 	}
 }
